@@ -11,6 +11,7 @@
     --background-color: rgba(242, 209, 201, 0.6);
 }
 body {
+    
     background: var(--background-color);
 }
 /*Cabeçalho ou heading*/
@@ -57,11 +58,34 @@ ul li a:hover {
 }
 
 #subtitle-menu {
+    padding: 24px;
     text-align: center;
     font-family: 'EB Garamond',serif;
-    font-size: x-large;
+    font-size: x-large ;
     color: var(--text-color);
 }
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid #000; */
+}
+.text{
+    font-family: 'EB Garamond',serif;
+    color: ;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-el{
+    text-align: center;
+}
+.countdown-el span{
+    font-size: 1.5rem;
+}
+
 
 /* @media (max-width: 768px){
     #heading ul{
