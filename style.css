@@ -65,6 +65,7 @@ ul li a:hover {
     color: var(--text-color);
 }
 .countdown-container {
+    padding-bottom: 48px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,8 +93,12 @@ span{
  * Always set the map height explicitly to define the size of the div element
  * that contains the map.
  */
+
  #map {
-    height: 100%;
+    display: inline-block;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
   }
   
   /*
@@ -106,12 +111,20 @@ span{
     padding: 0;
   }
 
-
-/* @media (max-width: 768px){
-    #heading ul{
-        display: none;
-    }
-    #heading ul.show-menu {
-        display: ;
-    }
-} */
+#teste{
+    padding-top: 48px;
+}
+ @media (max-width: 768px){
+    #map {
+        display: inline-block;
+        margin-left: 0%;
+        width: 100%;
+        height: 50%;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+} 
