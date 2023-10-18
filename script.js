@@ -34,3 +34,25 @@ countdown();
 
 setInterval(countdown, 1000);
 
+
+//pegando localização
+
+function getLocation(){
+    if(!navigator.geolocation)
+        return null;
+}
+
+// Initialize and add the map
+let map;
+
+async function initMap() {
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+
+initMap();

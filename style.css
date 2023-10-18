@@ -58,7 +58,7 @@ ul li a:hover {
 }
 
 #subtitle-menu {
-    padding: 24px;
+    padding: 48px;
     text-align: center;
     font-family: 'EB Garamond',serif;
     font-size: x-large ;
@@ -72,11 +72,14 @@ ul li a:hover {
 }
 .text{
     font-family: 'EB Garamond',serif;
-    color: ;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 4rem;
     line-height: 1;
     margin: 1rem 2rem;
+}
+span{
+    color: var(--text-color);
 }
 
 .countdown-el{
@@ -85,6 +88,23 @@ ul li a:hover {
 .countdown-el span{
     font-size: 1.5rem;
 }
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+ #map {
+    height: 100%;
+  }
+  
+  /*
+   * Optional: Makes the sample page fill the window.
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
 
 /* @media (max-width: 768px){
