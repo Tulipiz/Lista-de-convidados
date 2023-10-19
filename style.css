@@ -1,130 +1,170 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-:root{
-    --background-header: #F2B6B6;
-    --text-color: #594442;
-    --header-hover: rgba(255, 255, 255, 0.5);
-    --background-color: rgba(242, 209, 201, 0.6);
+:root {
+  --background-header: #f2b6b6;
+  --text-color: #594442;
+  --header-hover: rgba(255, 255, 255, 0.5);
+  --footer-hover: rgba(242,182,182,.5);
+  --background-color: rgba(242, 209, 201, 0.6);
 }
 body {
-    
-    background: var(--background-color);
+  background: var(--background-color);
 }
 /*Cabeçalho ou heading*/
 header {
-    background-color: var(--background-header);
-    color: var(--text-color);
-    border-radius: 2px;
-    font-size: large;
-    font-family: 'EB Garamond',serif;
+  background-color: var(--background-header);
+  color: var(--text-color);
+  border-radius: 2px;
+  font-size: large;
+  font-family: "EB Garamond", serif;
 }
 #heading {
-    text-align: center;
-    padding: 18px;
-  }
+  text-align: center;
+  padding: 18px;
+}
 
 #heading ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 #heading li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
-#heading a{
-    text-decoration: none;
-    color: var(--text-color);
+#heading a {
+  text-decoration: none;
+  color: var(--text-color);
 }
-ul li a{
-    padding: 18px 4px;
-    transition: background 0.2s;
+ul li a {
+  padding: 18px 4px;
+  transition: background 0.2s;
 }
 ul li a:hover {
-    background-color: var(--header-hover);
-    border-radius: 3px;
+  background-color: var(--header-hover);
+  border-radius: 3px;
 }
 
 #title-menu {
-    padding-top: 48px;
-    text-align: center;
-    font-family: 'Sacramento', cursive;
-    font-size: xx-large;
-    color: var(--text-color);
+  padding-top: 48px;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  font-size: xx-large;
+  color: var(--text-color);
 }
 
 #subtitle-menu {
-    padding: 48px;
-    text-align: center;
-    font-family: 'EB Garamond',serif;
-    font-size: x-large ;
-    color: var(--text-color);
+  padding: 48px;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: x-large;
+  color: var(--text-color);
 }
 .countdown-container {
-    padding-bottom: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* border: 1px solid #000; */
+  padding-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid #000; */
 }
-.text{
-    font-family: 'EB Garamond',serif;
-    color: var(--text-color);
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 1;
-    margin: 1rem 2rem;
+.text {
+  font-family: "EB Garamond", serif;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1;
+  margin: 1rem 2rem;
 }
-span{
-    color: var(--text-color);
+span {
+  color: var(--text-color);
 }
 
-.countdown-el{
-    text-align: center;
+.countdown-el {
+  text-align: center;
 }
-.countdown-el span{
-    font-size: 1.5rem;
+.countdown-el span {
+  font-size: 1.5rem;
 }
 /*
  * Always set the map height explicitly to define the size of the div element
  * that contains the map.
  */
 
- #map {
-    display: inline-block;
-    margin-left: 25%;
-    width: 50%;
-    height: 50%;
-  }
-  
-  /*
+#map {
+  display: inline-block;
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+/*
    * Optional: Makes the sample page fill the window.
    */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#teste {
+  padding: 48px 48px;
+}
+
+#social-midia {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 48px;
+}
+#social-midia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  color: var(--text-color);
+
+  text-decoration: none;
+  transition: background 0.2;
+  padding: 4px 8px;
+  border-radius: 9999px;
+}
+#social-midia a ion-icon  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+#social-midia a:hover {
+  background: var(--footer-hover);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+  font-size: large;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  #map {
+    display: inline-block;
+    margin-left: 0%;
+    width: 100%;
+    height: 50%;
+  }
   html,
   body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
-
-#teste{
-    padding-top: 48px;
 }
- @media (max-width: 768px){
-    #map {
-        display: inline-block;
-        margin-left: 0%;
-        width: 100%;
-        height: 50%;
-      }
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-} 
