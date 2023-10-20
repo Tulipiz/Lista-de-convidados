@@ -3,7 +3,7 @@ const hoursEl = document.getElementById("hours")
 const minsEl = document.getElementById("mins")
 const secondsEl = document.getElementById("seconds")
 
-const teaBaby = "26 dec 2023"
+const teaBaby = "15 dec 2023"
 /* Função do  Countdown(contagem regressiva)*/
 function countdown() {
   const teaBabyDate = new Date(teaBaby)
@@ -57,16 +57,16 @@ navigator.geolocation.getCurrentPosition(
 
 
 //Pegue o modal
-var modal = document.getElementById("my-modal");
+const modal = document.getElementById("my-modal");
 //Obtém o botão que abre o modal
-var btn = document.getElementById("open-modal");
+const btn = document.getElementById("open-modal");
 // Obtém o elemento <span> que fecha o modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 
 //Quando o usuário clicar no botão, abre o modal
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
   
 // Quando o usuário clicar em <span> (x), feche o modal
@@ -122,3 +122,15 @@ async function initMap() {
 }
 
 initMap()
+
+// enviar
+
+function enviar() {
+
+  const nome = document.getElementById("name").value;
+  console.log(nome);
+  alert("Nome: " + nome);
+}
+
+// Associando a função ao evento onclick do botão
+document.getElementById("my-btn").onclick = enviar;

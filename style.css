@@ -41,15 +41,14 @@ header {
   color: var(--text-color);
 }
 body .modal{
-  display: flex;
+  padding-top: 48px;
+  display: none;
   align-items: center;
   justify-content: center;
 }
 .modal {
-  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -64,31 +63,39 @@ body .modal{
 .modal-content {
   background-color: var(--background-header);
   margin: auto;
-  
-  border: 1px solid #888;
-  border-radius: 20px;
-  width: 35%;
-  height: 70%;
+  /* border: 4px solid var(--header-hover); */
+  border-radius: 16px;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .moldura {
-  margin-top: 48px;
-  margin-left: 48px;
+  display: inline;
 	border:4px solid var(--header-hover);
-  width: 430px;
-  height: 370px;
-  border-radius: 10px;
-	
+  border-radius:8px;
+  width: 95%;
+  height: 95%;
 
 }
 /* The Close Button */
 .close {
   margin-right: 5px;
-
   color:var(--header-hover);
   float: right;
   font-size: 45px;
   font-weight: bold;
   padding-right: 12px;
+}
+.moldura p{
+  padding: 50px;
+  font-family: "EB Garamond", serif;
+}
+
+.moldura p {
+  font-size: 24px;
+  text-align: center;
 }
 
 .close:hover,
@@ -97,6 +104,14 @@ body .modal{
   text-decoration: none;
   cursor: pointer;
 }
+
+form { 
+  margin: 0 auto; 
+  width:250px;
+  height: 200px;
+  }
+  
+
 
 
 ul li a {
@@ -217,7 +232,52 @@ footer {
   color: var(--text-color);
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 680px) {
+
+  header {
+    background-color: var(--background-header);
+    color: var(--text-color);
+    border-radius: 2px;
+    font-size: small;
+    font-family: "EB Garamond", serif;
+  }
+  /*Responsividade do titulo*/
+  #title-menu {
+    padding-top: 48px;
+    text-align: center;
+    font-family: "Sacramento", cursive;
+    font-size: x-large;
+    color: var(--text-color);
+  }
+   /*Responsividade do sub-titulo*/
+  #subtitle-menu {
+    padding: 48px;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: large;
+    color: var(--text-color);
+  }
+  /**/
+  .text {
+    background-color: var(--background-header);
+    font-family: "EB Garamond", serif;
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 4px 4px;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 24px 24px;
+  }
+  /**/
+  .countdown-el span {
+    background-color: var(--background-header);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  /* responsividade do mapa */
   #map {
     display: inline-block;
     margin-left: 0%;
@@ -230,4 +290,17 @@ footer {
     margin: 0;
     padding: 0;
   }
+  /* responsividade do modal */
+  .modal-content {
+    background-color: var(--background-header);
+    margin: auto;
+    /* border: 4px solid var(--header-hover); */
+    border-radius: 16px;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
