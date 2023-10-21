@@ -236,6 +236,10 @@ footer {
 @media (max-width: 680px) {
 
   header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: var(--background-header);
     color: var(--text-color);
     border-radius: 2px;
@@ -243,9 +247,10 @@ footer {
     font-weight: bold;
     font-family: "EB Garamond", serif;
   }
+  
   /*Responsividade do titulo*/
   #title-menu {
-    padding-top: 48px;
+    padding-top: 96px;
     text-align: center;
     font-family: "Sacramento", cursive;
     font-size: 30px;
@@ -266,9 +271,9 @@ footer {
     font-family: "EB Garamond", serif;
     color: var(--text-color);
     border-radius: 10px;
-    padding: 4px 4px;
+    padding: 8px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1;
     margin: 24px 24px;
   }
@@ -310,6 +315,9 @@ footer {
     
   }
   .inpt-name{
+    color: var(--text-color);
+    font-weight: bold;
+    padding-left: 5px;
     border-style: none;
     border-radius: 9999px;
     height: 30px;
@@ -322,7 +330,7 @@ footer {
     font-weight: bold;
     inline-size: 120px;
     height: 30px;
-    margin:25% 25%;
+    margin: 10% 25%;
     border-radius: 9999px;
     border-style: none;
     border: 1px solid var(--text-color);
