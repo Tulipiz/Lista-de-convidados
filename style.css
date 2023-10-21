@@ -239,7 +239,8 @@ footer {
     background-color: var(--background-header);
     color: var(--text-color);
     border-radius: 2px;
-    font-size: small;
+    font-size: medium;
+    font-weight: bold;
     font-family: "EB Garamond", serif;
   }
   /*Responsividade do titulo*/
@@ -247,7 +248,7 @@ footer {
     padding-top: 48px;
     text-align: center;
     font-family: "Sacramento", cursive;
-    font-size: x-large;
+    font-size: 30px;
     color: var(--text-color);
   }
    /*Responsividade do sub-titulo*/
@@ -255,7 +256,8 @@ footer {
     padding: 48px;
     text-align: center;
     font-family: "EB Garamond", serif;
-    font-size: large;
+    font-size: x-large;
+    font-weight: bold;
     color: var(--text-color);
   }
   /**/
@@ -302,5 +304,35 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .lb-name{
+    color: var(--text-color);
+    font-weight: bold;
+    
+  }
+  .inpt-name{
+    border-style: none;
+    border-radius: 9999px;
+    height: 30px;
+    background-color: var(--background-header);
+    border: 1px solid var(--text-color);
+  }
+
+  .btn{
+    color: var(--text-color);
+    font-weight: bold;
+    inline-size: 120px;
+    height: 30px;
+    margin:25% 25%;
+    border-radius: 9999px;
+    border-style: none;
+    border: 1px solid var(--text-color);
+    background-color: var(--header-hover);
+    
+  }
+
+
+
+  
+  
 }
 
