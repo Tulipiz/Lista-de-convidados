@@ -60,8 +60,22 @@ section {
   
 }
 .img03{
-    width: 200%;
+    width: 204%;
     height: 100%;
 }
 
+@media (max-width: 680px){
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--background-header);
+    color: var(--text-color);
+    border-radius: 2px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: "EB Garamond", serif;
+  }
 
+}
