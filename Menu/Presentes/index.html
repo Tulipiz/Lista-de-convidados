@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="module" src="script.js" defer></script>
     <title>Chá de bebe</title>
   </head>
   <body>
@@ -16,7 +17,28 @@
         </ul>
       </div>
     </header>
-
+    <div id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="moldura">
+          <span class="close">&times;</span>
+          <p>
+            Olá, obrigado por se juntar a nós no chá de bebê da maitê, esperamos
+            você conosco nesta ocasião especial.
+          </p>
+          <form id="forms">
+            <label for="f-name" class="lb-name">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              class="inpt-name"
+              name="name"
+              required
+            /><br />
+            <button id="my-btn" class="btn">Clique aqui</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="galeria">
       <img src="img01.jpeg" alt="Imagem 01" class="imgGaleria img01" />
       <img src="img03.jpeg" alt="Imagem 03" class="imgGaleria img03" />
