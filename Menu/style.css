@@ -91,6 +91,7 @@ body .modal{
 .moldura p{
   padding: 50px;
   font-family: "EB Garamond", serif;
+  color: var(--text-color);
 }
 
 .moldura p {

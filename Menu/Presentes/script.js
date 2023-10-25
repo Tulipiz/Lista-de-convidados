@@ -21,3 +21,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function enviar() {
+
+    const nome = document.getElementById("name").value;
+    console.log(nome);
+    alert("Nome: " + nome);
+  }
+  
+  // Associando a função ao evento onclick do botão
+  document.getElementById("my-btn").onclick = enviar;
