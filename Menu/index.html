@@ -24,6 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chá de bebe</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="modal.css" />
     <script type="module" src="script.js" defer></script>
   </head>
   <body>
@@ -41,14 +42,17 @@
         <div class="modal-content">
           
           <div class ="moldura">
-            <span class="close">&times;</span>
+            <div class="span">
+              <span class="close">&times;</span>
+            </div>
+            <div class = "forms-center">
             <p>Olá, obrigado por se juntar a nós no chá de bebê da maitê, esperamos você conosco nesta ocasião especial.</p>
             <form  id="forms">
               <Label for="f-name" class="lb-name">Nome:</Label>
               <input type="text" id="name" class="inpt-name" name="name" required><br>
               <button id="my-btn" class="btn">Clique aqui</button>
             </form>
-            
+          </div>
           </div>
         </div>
 
