@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@400;500&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chá de bebe</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="modal.css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="heading">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#" id="open-modal">Confirmação de Presença</a></li>
+          <li><a href="./presentes/index.html">Galeria</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id= "my-modal" class="modal">
+
+        <div class="modal-content">
+          
+          <div class ="moldura">
+            <div class="span">
+              <span class="close">&times;</span>
+            </div>
+            <div class = "forms-center">
+            <p>Olá, obrigado por se juntar a nós no chá de bebê da maitê, esperamos você conosco nesta ocasião especial.</p>
+            <form  id="forms">
+              <Label for="f-name" class="lb-name">Nome:</Label>
+              <input type="text" id="name" class="inpt-name" name="name" required><br>
+              <button id="my-btn" class="btn">Clique aqui</button>
+            </form>
+          </div>
+          </div>
+        </div>
+
+    </div>
+    <div id="title-menu">
+      <p><h1>Chá de fralda da Maitê</h1></p>
+    </div>
+    <div id="subtitle-menu">
+        15 de dezembro 2023
+        <br>
+        ás 16:00
+    </div>
+    <div class="countdown-container">
+        <div class="countdown-el days-c">
+            <p class="text" id="days">0</p>
+            <span>dias</span>
+        </div>
+        <div class="countdown-el hours-c">
+            <p class="text" id="hours">0</p>
+            <span>horas</span>
+        </div>
+        <div class="countdown-el mins-c">
+            <p class="text" id="mins">0</p>
+            <span>mins</span>
+        </div>
+        <div class="countdown-el seconds-c">
+            <p class="text" id="seconds">0</p>
+            <span>segs</span>
+        </div>
+    </div>
+
+    <!-- <div id="map"></div> -->
+
+
+    <div id="social-midia">
+      <a href="https://www.instagram.com/pipinho.jpg/"target="_blank"><ion-icon id="i1" name="logo-instagram"></ion-icon
+        > Instagram do papai. </a>
+      <a href="https://www.instagram.com/gaby_samila/"target="_blank"><ion-icon id="i2" name="logo-instagram"></ion-icon
+        >Instagram da mamãe.</a>
+
+    </div>
+
+    <footer>
+      Feito com ❤️ pelo papai!
+    </footer>
+
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    q
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
