@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/contato", (req, res) => {
+router.get("/presentes/index.html", (req, res) => {
   const contatoPath = path.resolve(
     __dirname,
     "Menu",
