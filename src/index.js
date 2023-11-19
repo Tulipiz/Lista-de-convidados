@@ -3,7 +3,7 @@ const path = require("path");
 const app = Express();
 const router = Express.Router();
 
-app.use(Express.static(path.join(__dirname, "Menu")));
+app.use(Express.static(path.resolve(__dirname, "Menu")));
 
 router.get("/", (req, res) => {
   const indexPath = path.resolve(__dirname, "Menu", "index.html");
