@@ -32,6 +32,11 @@ router.get("/contato", (req, res) => {
 
 app.use(router);
 
-app.listen(process.eventNames.PORT || 3333, () => {
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
+app.listen(port, () => {
   console.log("Servidor rodando");
 });
