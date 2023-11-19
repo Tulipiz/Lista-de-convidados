@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/presentes/index.js", (req, res) => {
+router.get("/presentes/index.html", (req, res) => {
   const contatoPath = path.resolve(
     __dirname,
     "Menu",
