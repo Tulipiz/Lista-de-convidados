@@ -4,7 +4,7 @@ const app = Express();
 const router = Express.Router();
 
 app.use(Express.static(path.join(__dirname, "Menu")));
-app.use(Express.static(path.join(__dirname, "Menu", "Presentes")));
+app.use(Express.static(path.join(__dirname, "Menu", "Presentes", "style.css")));
 
 router.get("/", (req, res) => {
   const indexPath = path.resolve(__dirname, "Menu", "index.html");
@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/presentes/index.html", (req, res) => {
+router.get("/presentes", (req, res) => {
   const contatoPath = path.resolve(
     __dirname,
     "Menu",
