@@ -15,13 +15,8 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/presentes/index.html", (req, res) => {
-  const contatoPath = path.resolve(
-    __dirname,
-    "Menu",
-    "Presentes",
-    "index.html"
-  );
+router.get("Presentes/index.html", (req, res) => {
+  const contatoPath = path.resolve(__dirname, "Menu", "index1.html");
   res.sendFile(contatoPath, (err) => {
     if (err) {
       console.error(err);
