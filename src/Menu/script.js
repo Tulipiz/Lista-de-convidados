@@ -60,11 +60,10 @@ window.onclick = function (event) {
 async function enviar() {
   const nome = document.getElementById("name").value;
   const data = {
-    values: [[nome]], // Supondo que seu servidor espera um array de valores
+    values: [[nome]],
   };
   console.log(data);
   try {
-    // Realiza uma solicitação POST para o seu servidor
     const response = await fetch("/addRow", {
       method: "POST",
       headers: {
