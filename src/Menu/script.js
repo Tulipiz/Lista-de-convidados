@@ -3,7 +3,7 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
-const teaBaby = "15 dec 2023";
+const teaBaby = "16 dec 2023";
 /* Função do  Countdown(contagem regressiva)*/
 function countdown() {
   const teaBabyDate = new Date(teaBaby);
@@ -51,11 +51,11 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 //Quando o usuário clicar em qualquer lugar fora do modal, feche-o
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
 
 async function enviar() {
   const nome = document.getElementById("name").value;
