@@ -157,6 +157,26 @@ footer {
   color: var(--text-color);
 }
 
+#toast-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  z-index: 9999;
+}
+
+.toast {
+  background-color: var(--background-header);
+  color: var(--text-color);
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
 @media (max-width: 680px) {
   header {
     position: fixed;
@@ -260,5 +280,15 @@ footer {
     border-style: none;
     border: 1px solid var(--text-color);
     background-color: var(--header-hover);
+  }
+  .toast {
+    background-color: var(--background-header);
+    color: var(--text-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 }
